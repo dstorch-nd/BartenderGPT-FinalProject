@@ -5,7 +5,7 @@ import io
 import os
 import base64
 
-OpenAI.api_key = st.secrets["openai_key"]
+OpenAI.api_key = st.secrets["API_KEY"]
 
 client = OpenAI()
 

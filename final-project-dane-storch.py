@@ -13,7 +13,7 @@ def encode_image(image_data):
 
 # function to find matching cocktails based on an image using gpt
 def find_cocktails_with_image(image_data):
-    client.api_key = os.getenv("OPENAI_API_KEY")
+    client.api_key = st.secrets["openai"]["key"]
 
     base64_image = encode_image(image_data)
 
